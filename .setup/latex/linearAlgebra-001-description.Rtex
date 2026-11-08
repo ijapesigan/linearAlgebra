@@ -1,0 +1,110 @@
+\documentclass{article}
+
+\input{.setup/latex/preamble/preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BIBLATEX APA
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% begin.rcode
+% #| label = "root",
+% #| include = FALSE
+% root <- rprojroot::is_rstudio_project
+%% end.rcode
+
+%% begin.rcode
+% #| label = "knitr",
+% #| include = FALSE,
+% #| file = root$find_file(
+% #|   ".setup",
+% #|   "latex",
+% #|   "r-scripts",
+% #|   "knitr.R"
+% #| )
+%% end.rcode
+
+%% begin.rcode
+% #| label = "biblatex",
+% #| echo = FALSE,
+% #| message = FALSE,
+% #| warning = FALSE,
+% #| results = "asis"
+% if (require(package = "rProject")) {
+%   Bib(
+%     path = dirname(
+%       path = root$find_file(
+%         "project.Rproj"
+%       )
+%     )
+%   )
+%   cat(
+%     .PreambleBiblatex(
+%       path = root$find_file(
+%         ".setup",
+%         "latex",
+%         "bib"
+%       )
+%     )
+%   )
+% } else {
+%   cat(
+%     .PreambleCombined(
+%       path = root$find_file(
+%         ".setup",
+%         "latex",
+%         "bib"
+%       ),
+%       output_path = root$find_file(
+%         ".setup",
+%         "latex"
+%       )
+%     )
+%   )
+% }
+%% end.rcode
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{linearAlgebra: Linear Algebra Helpers}
+\author{Ivan Jacob Agaloos Pesigan}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\section*{Description}
+
+Linear algebra helpers:
+vectorization and half-vectorization,
+symmetric matrices from their half-vectorization,
+the duplication matrix and its Moore-Penrose inverse,
+deviation scores,
+and tests for symmetric and positive definite matrices.
+Each exported function has an internal version without input checks
+that other projects can copy.
+
+\section*{Installation}
+
+You can install the development version of \texttt{linearAlgebra} from
+\href{https://github.com/ijapesigan/linearAlgebra}{GitHub} with:
+
+%% begin.rcode
+% #| eval = FALSE
+% if (!requireNamespace(package = "pak", quietly = TRUE)) {
+%   utils::install.packages(pkgs = "pak")
+% }
+% pak::pkg_install(pkg = "ijapesigan/linearAlgebra")
+%% end.rcode
+
+\section*{More Information}
+
+See
+\href{https://ijapesigan.github.io/linearAlgebra/index.html}{GitHub Pages}
+for package documentation.
+
+\nocite{RCoreTeam-2026}
+
+\printbibliography
+
+\end{document}

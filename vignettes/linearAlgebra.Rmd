@@ -1,0 +1,111 @@
+---
+title: "linearAlgebra: Linear Algebra Helpers"
+author: "Ivan Jacob Agaloos Pesigan"
+output: rmarkdown::html_vignette
+bibliography: "vignettes.bib"
+csl: https://raw.githubusercontent.com/citation-style-language/styles/master/apa.csl
+nocite: |
+  @RCoreTeam-2026
+vignette: >
+  %\VignetteIndexEntry{linearAlgebra: Linear Algebra Helpers}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r}
+#| include = FALSE
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## Description
+
+Linear algebra helpers in R [@RCoreTeam-2026]:
+vectorization and half-vectorization,
+symmetric matrices from their half-vectorization,
+the duplication matrix and its Moore-Penrose inverse,
+deviation scores,
+and tests for symmetric and positive definite matrices.
+Each exported function has an internal version without input checks
+that other projects can copy.
+
+## Installation
+
+You can install the development version of `linearAlgebra` from
+[GitHub](https://github.com/ijapesigan/linearAlgebra) with:
+
+```r
+if (!require("pak")) install.packages("pak")
+pak::pkg_install("ijapesigan/linearAlgebra")
+```
+
+## Example
+
+```{r}
+library(package = "linearAlgebra")
+```
+
+A covariance matrix of three variables.
+
+```{r}
+sigma <- stats::cov(x = datasets::mtcars[, c("mpg", "wt", "hp")])
+sigma
+```
+
+`Vec()` stacks the columns.
+`Vech()` stacks the lower triangle with the diagonal,
+and `Vechs()` the lower triangle without it.
+
+```{r}
+Vec(x = sigma)
+Vech(x = sigma)
+Vechs(x = sigma)
+```
+
+`SymofVech()` and `SymofVechs()` rebuild the symmetric matrix.
+
+```{r}
+SymofVech(x = Vech(x = sigma))
+SymofVechs(x = Vechs(x = sigma), diags = diag(x = sigma))
+```
+
+The duplication matrix maps the half-vectorization to the vectorization,
+and its Moore-Penrose inverse maps back.
+
+```{r}
+d_mat <- DMat(k = 3)
+all.equal(
+  target = as.vector(x = d_mat %*% Vech(x = sigma)),
+  current = Vec(x = sigma)
+)
+all.equal(
+  target = as.vector(x = PInvDmat(k = 3) %*% Vec(x = sigma)),
+  current = unname(obj = Vech(x = sigma))
+)
+```
+
+Tests for symmetric and positive definite matrices.
+
+```{r}
+TestSymmetric(x = sigma)
+TestPositiveDefinite(x = sigma)
+```
+
+Deviation scores.
+
+```{r}
+deviation <- Deviation(
+  x = as.matrix(x = datasets::mtcars[, c("mpg", "wt")])
+)
+utils::head(x = deviation)
+```
+
+## Documentation
+
+See
+[GitHub Pages](https://ijapesigan.github.io/linearAlgebra)
+for package documentation.
+
+## References

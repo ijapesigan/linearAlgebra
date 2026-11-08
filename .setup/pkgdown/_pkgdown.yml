@@ -1,0 +1,13 @@
+destination: pkgdown
+url: https://ijapesigan.github.io/linearAlgebra/
+
+template:
+  package: rProject
+
+articles:
+- title: Getting Started
+  contents:
+  - linearAlgebra
+- title: Session Information
+  contents:
+  - session
