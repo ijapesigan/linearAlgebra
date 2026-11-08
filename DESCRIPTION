@@ -1,0 +1,32 @@
+Package: linearAlgebra
+Title: Linear Algebra Helpers
+Version: 0.0.1
+Authors@R: 
+    person(given = "Ivan Jacob Agaloos",
+           family = "Pesigan",
+           role = c("aut", "cre", "cph"),
+           email = "r.jeksterslab@gmail.com",
+           comment = c(ORCID = "0000-0003-4818-8420"))
+Description: Linear algebra helpers: vectorization and half-vectorization,
+    symmetric matrices from their half-vectorization, the duplication
+    matrix and its Moore-Penrose inverse, deviation scores, and tests for
+    symmetric and positive definite matrices.
+    Each exported function has an internal version without input checks
+    that other projects can copy.
+URL: https://github.com/ijapesigan/linearAlgebra,
+        https://ijapesigan.github.io/linearAlgebra/
+BugReports: https://github.com/ijapesigan/linearAlgebra/issues
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+Depends: R (>= 3.0.0)
+Imports: Rcpp
+LinkingTo: Rcpp, RcppArmadillo
+Suggests: knitr, rmarkdown, testthat
+VignetteBuilder: knitr
+Config/roxygen2/version: 8.1.1.9000
+NeedsCompilation: yes
+Packaged: 2026-11-08 01:30:54 UTC; root
+Author: Ivan Jacob Agaloos Pesigan [aut, cre, cph] (ORCID:
+    <https://orcid.org/0000-0003-4818-8420>)
+Maintainer: Ivan Jacob Agaloos Pesigan <r.jeksterslab@gmail.com>
