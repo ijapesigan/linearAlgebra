@@ -27,7 +27,7 @@ symmetric matrix
 \eqn{\boldsymbol{A}}
 is positive definite
 if all of its eigenvalues are positive.
-Eigenvalues at or above \code{-tol} times \eqn{\left| \lambda_{1} \right|},
+Eigenvalues above \code{tol} times \eqn{\left| \lambda_{1} \right|},
 where \eqn{\lambda_{1}} is the largest eigenvalue, pass.
 }
 \examples{
@@ -48,6 +48,7 @@ TestPositiveDefinite(
 }
 \seealso{
 Other Linear Algebra Functions:
+\code{\link[=TestPositiveSemiDefinite]{TestPositiveSemiDefinite()}},
 \code{\link[=TestSymmetric]{TestSymmetric()}}
 }
 \author{
