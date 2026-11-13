@@ -10,7 +10,7 @@
 #' \eqn{\boldsymbol{A}}
 #' is positive definite
 #' if all of its eigenvalues are positive.
-#' Eigenvalues at or above `-tol` times \eqn{\left| \lambda_{1} \right|},
+#' Eigenvalues above `tol` times \eqn{\left| \lambda_{1} \right|},
 #' where \eqn{\lambda_{1}} is the largest eigenvalue, pass.
 #'
 #' @author Ivan Jacob Agaloos Pesigan

@@ -41,7 +41,8 @@ TestSymmetric(
 }
 \seealso{
 Other Linear Algebra Functions:
-\code{\link[=TestPositiveDefinite]{TestPositiveDefinite()}}
+\code{\link[=TestPositiveDefinite]{TestPositiveDefinite()}},
+\code{\link[=TestPositiveSemiDefinite]{TestPositiveSemiDefinite()}}
 }
 \author{
 Ivan Jacob Agaloos Pesigan

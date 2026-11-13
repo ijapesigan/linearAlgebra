@@ -25,8 +25,9 @@
   C <- chol(x = x)
   Lc <- t(x = C)
   d <- diag(x = Lc)
-  D <- diag(x = d * d)
-  L <- Lc %*% diag(x = 1 / d)
+  k <- length(x = d)
+  D <- diag(x = d * d, nrow = k)
+  L <- Lc %*% diag(x = 1 / d, nrow = k)
   list(
     L = L,
     D = D
