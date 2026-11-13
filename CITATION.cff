@@ -1,0 +1,39 @@
+# ------------------------------------------------
+# CITATION.cff file created with {cffr} R package
+# See also: https://docs.ropensci.org/cffr/
+# ------------------------------------------------
+ 
+cff-version: 1.2.0
+message: 'To cite package "linearAlgebra" in publications use:'
+type: software
+license: MIT
+title: 'linearAlgebra: Linear Algebra Helpers'
+version: 0.0.3
+abstract: 'Linear algebra helpers: vectorization and half-vectorization, symmetric
+  matrices from their half-vectorization, the duplication matrix and its Moore-Penrose
+  inverse, deviation scores, and tests for symmetric and positive definite matrices.
+  Each exported function has an internal version without input checks that other projects
+  can copy.'
+authors:
+- family-names: Pesigan
+  given-names: Ivan Jacob Agaloos
+  email: r.jeksterslab@gmail.com
+  orcid: https://orcid.org/0000-0003-4818-8420
+preferred-citation:
+  type: manual
+  title: 'linearAlgebra: Linear Algebra Helpers'
+  authors:
+  - family-names: Pesigan
+    given-names: Ivan Jacob Agaloos
+    email: r.jeksterslab@gmail.com
+    orcid: https://orcid.org/0000-0003-4818-8420
+  year: '2026'
+  notes: R package version 0.0.3
+repository-code: https://github.com/ijapesigan/linearAlgebra
+url: https://ijapesigan.github.io/linearAlgebra/
+contact:
+- family-names: Pesigan
+  given-names: Ivan Jacob Agaloos
+  email: r.jeksterslab@gmail.com
+  orcid: https://orcid.org/0000-0003-4818-8420
+

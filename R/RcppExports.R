@@ -56,6 +56,6 @@ NULL
 #'
 #' @noRd
 .DiffCols <- function(x) {
-    .Call('_linearAlgebra_DiffCols', PACKAGE = 'linearAlgebra', x)
+    .Call(`_linearAlgebra_DiffCols`, x)
 }
 
