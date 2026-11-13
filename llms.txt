@@ -1,0 +1,71 @@
+# linearAlgebra
+
+Ivan Jacob Agaloos Pesigan
+
+## Description
+
+Linear algebra helpers in R (R Core Team, 2026): vectorization and
+half-vectorization, symmetric matrices from their half-vectorization,
+the duplication matrix and its Moore-Penrose inverse, deviation scores,
+and tests for symmetric and positive definite matrices. Each exported
+function has an internal version without input checks that other
+projects can copy.
+
+## Installation
+
+You can install the development version of `linearAlgebra` from
+[GitHub](https://github.com/ijapesigan/linearAlgebra) with:
+
+\
+`if`` ``(``!`[`require`](https://rdrr.io/r/base/library.html)`(`[`"pak"`](https://pak.r-lib.org/)`)``)`` `[`install.packages`](https://rdrr.io/r/utils/install.packages.html)`(``"pak"``)`\
+`pak``::`[`pkg_install`](https://pak.r-lib.org/reference/pkg_install.html)`(``"ijapesigan/linearAlgebra"``)`
+
+## More Information
+
+See [GitHub Pages](https://ijapesigan.github.io/linearAlgebra) for
+package documentation.
+
+## References
+
+R Core Team. (2026). *R: A language and environment for statistical
+computing*. R Foundation for Statistical Computing.
+<https://www.R-project.org/>
+
+# Package index
+
+## All functions
+
+- [`DMat()`](https://ijapesigan.github.io/linearAlgebra/reference/DMat.md)
+  : The Duplication Matrix
+- [`Deviation()`](https://ijapesigan.github.io/linearAlgebra/reference/Deviation.md)
+  : Deviation from the Mean
+- [`PInvDmat()`](https://ijapesigan.github.io/linearAlgebra/reference/PInvDmat.md)
+  : The Moore-Penrose Inverse of the Duplication Matrix
+- [`SymofVech()`](https://ijapesigan.github.io/linearAlgebra/reference/SymofVech.md)
+  : Symmetric Matrix from Its Half-Vectorization
+- [`SymofVechs()`](https://ijapesigan.github.io/linearAlgebra/reference/SymofVechs.md)
+  : Symmetric Matrix from Its Strict Half-Vectorization
+- [`TestPositiveDefinite()`](https://ijapesigan.github.io/linearAlgebra/reference/TestPositiveDefinite.md)
+  : Test for a Positive Definite Matrix
+- [`TestPositiveSemiDefinite()`](https://ijapesigan.github.io/linearAlgebra/reference/TestPositiveSemiDefinite.md)
+  : Test for a Positive Semidefinite Matrix
+- [`TestSymmetric()`](https://ijapesigan.github.io/linearAlgebra/reference/TestSymmetric.md)
+  : Test for a Symmetric Matrix
+- [`Vec()`](https://ijapesigan.github.io/linearAlgebra/reference/Vec.md)
+  : Vectorize a Matrix
+- [`Vech()`](https://ijapesigan.github.io/linearAlgebra/reference/Vech.md)
+  : Half-Vectorize a Matrix
+- [`Vechs()`](https://ijapesigan.github.io/linearAlgebra/reference/Vechs.md)
+  : Strict Half-Vectorize a Matrix
+
+# Articles
+
+### Getting Started
+
+- [linearAlgebra: Linear Algebra
+  Helpers](https://ijapesigan.github.io/linearAlgebra/articles/linearAlgebra.md):
+
+### Session Information
+
+- [linearAlgebra:
+  Session](https://ijapesigan.github.io/linearAlgebra/articles/session.md):
