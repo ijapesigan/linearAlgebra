@@ -13,7 +13,7 @@
 #' Eigenvalues at or above `-tol` times \eqn{\left| \lambda_{1} \right|},
 #' where \eqn{\lambda_{1}} is the largest eigenvalue, pass.
 #' Zero eigenvalues pass.
-#' No input checks: see [TestPositiveSemiDefinite()].
+#' No input checks: see `TestPositiveSemiDefinite()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

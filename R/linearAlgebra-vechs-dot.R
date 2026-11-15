@@ -3,7 +3,7 @@
 #' Returns \eqn{\operatorname{vechs} \! \left( \boldsymbol{A} \right)},
 #' the lower triangle of a square matrix, diagonal excluded,
 #' stacked column by column.
-#' No input checks: see [Vechs()].
+#' No input checks: see `Vechs()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

@@ -11,7 +11,7 @@
 #' is symmetric
 #' if \eqn{\boldsymbol{A} = \boldsymbol{A}^{\prime}}.
 #' Elements are compared exactly.
-#' No input checks: see [TestSymmetric()].
+#' No input checks: see `TestSymmetric()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

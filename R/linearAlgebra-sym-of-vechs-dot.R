@@ -4,7 +4,7 @@
 #' from \eqn{\operatorname{vechs} \! \left( \boldsymbol{A} \right)},
 #' its lower triangle without the diagonal stacked column by column,
 #' and its diagonal elements.
-#' No input checks: see [SymofVechs()].
+#' No input checks: see `SymofVechs()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

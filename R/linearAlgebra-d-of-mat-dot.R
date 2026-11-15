@@ -1,7 +1,7 @@
 #' Deviation from the Center (Matrix Input, Internal)
 #'
 #' Subtracts the center of each column from that column of `x`.
-#' No input checks: see [Deviation()].
+#' No input checks: see `Deviation()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

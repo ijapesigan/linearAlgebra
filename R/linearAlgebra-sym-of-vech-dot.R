@@ -3,7 +3,7 @@
 #' Builds the symmetric \eqn{k \times k} matrix
 #' from \eqn{\operatorname{vech} \! \left( \boldsymbol{A} \right)},
 #' its lower triangle stacked column by column.
-#' No input checks: see [SymofVech()].
+#' No input checks: see `SymofVech()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

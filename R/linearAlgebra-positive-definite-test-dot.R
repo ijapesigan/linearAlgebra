@@ -13,7 +13,7 @@
 #' Eigenvalues above `tol` times \eqn{\left| \lambda_{1} \right|},
 #' where \eqn{\lambda_{1}} is the largest eigenvalue, pass.
 #' Zero eigenvalues fail.
-#' No input checks: see [TestPositiveDefinite()].
+#' No input checks: see `TestPositiveDefinite()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

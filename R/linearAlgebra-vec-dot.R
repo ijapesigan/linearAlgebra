@@ -2,7 +2,7 @@
 #'
 #' Returns \eqn{\operatorname{vec} \! \left( \boldsymbol{A} \right)},
 #' the columns of a matrix stacked into one vector.
-#' No input checks: see [Vec()].
+#' No input checks: see `Vec()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

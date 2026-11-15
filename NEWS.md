@@ -1,3 +1,9 @@
+# linearAlgebra 0.0.4
+
+## Patch
+
+- In the internal documentation, links to the exported function of the same name are code text, so a project that holds only the internal copy has no unresolved links.
+
 # linearAlgebra 0.0.3
 
 ## New
