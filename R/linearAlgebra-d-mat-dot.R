@@ -6,7 +6,7 @@
 #' \operatorname{vech} \! \left( \boldsymbol{A} \right) =
 #' \operatorname{vec} \! \left( \boldsymbol{A} \right)}
 #' for every symmetric \eqn{k \times k} matrix \eqn{\boldsymbol{A}}.
-#' No input checks: see [DMat()].
+#' No input checks: see `DMat()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'

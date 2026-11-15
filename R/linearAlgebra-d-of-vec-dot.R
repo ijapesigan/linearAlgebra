@@ -1,7 +1,7 @@
 #' Deviation from the Center (Vector Input, Internal)
 #'
 #' Subtracts `center` from every element of `x`.
-#' No input checks: see [Deviation()].
+#' No input checks: see `Deviation()`.
 #'
 #' @author Ivan Jacob Agaloos Pesigan
 #'
