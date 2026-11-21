@@ -14,9 +14,9 @@
 #' @return Returns a numeric \eqn{k \times k} symmetric matrix.
 #'
 #' @examples
-#' x <- toeplitz((3:1) / 3)
+#' x <- toeplitz(x = (3:1) / 3)
 #' x
-#' SymofVech(x = Vech(x))
+#' SymofVech(x = Vech(x = x))
 #'
 #' @family Symmetric Functions
 #' @keywords linearAlgebra symmetric

@@ -32,11 +32,11 @@ where \eqn{\lambda_{1}} is the largest eigenvalue, pass.
 }
 \examples{
 # TRUE
-TestPositiveDefinite(diag(2))
+TestPositiveDefinite(x = diag(x = 2))
 
 # FALSE
 TestPositiveDefinite(
-  matrix(
+  x = matrix(
     data = c(1, 2, 3, 2, 4, 5, 3, 5, 6),
     ncol = 3
   )

@@ -1,4 +1,4 @@
-## ---- test-linearAlgebra-ldl
+## ---- test-linearAlgebra-ldl-dot
 lapply(
   X = 1,
   FUN = function(i,
@@ -26,5 +26,5 @@ lapply(
       }
     )
   },
-  text = "test-linearAlgebra-ldl"
+  text = "test-linearAlgebra-ldl-dot"
 )

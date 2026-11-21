@@ -13,15 +13,18 @@
 #' @return Returns a vector of length \eqn{k (k - 1) / 2}.
 #'
 #' @examples
-#' x <- toeplitz((3:1) / 3)
+#' x <- toeplitz(x = (3:1) / 3)
 #' x
-#' Vechs(x)
+#' Vechs(x = x)
 #'
 #' @family Vectorization Functions
 #' @keywords linearAlgebra vectorization
 #' @export
 Vechs <- function(x) {
-  stopifnot(is.matrix(x = x))
+  stopifnot(
+    is.matrix(x = x),
+    nrow(x = x) == ncol(x = x)
+  )
   out <- .Vechs(x = x)
   varnames <- colnames(x = x)
   if (!is.null(x = varnames)) {

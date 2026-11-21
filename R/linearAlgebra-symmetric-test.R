@@ -20,11 +20,11 @@
 #'
 #' @examples
 #' # TRUE
-#' TestSymmetric(diag(2))
+#' TestSymmetric(x = diag(x = 2))
 #'
 #' # FALSE
 #' TestSymmetric(
-#'   matrix(
+#'   x = matrix(
 #'     data = 1:9,
 #'     ncol = 3
 #'   )

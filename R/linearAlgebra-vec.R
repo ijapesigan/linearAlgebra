@@ -10,9 +10,9 @@
 #' @return Returns a vector of length `nrow(x) * ncol(x)`.
 #'
 #' @examples
-#' x <- toeplitz((3:1) / 3)
+#' x <- toeplitz(x = (3:1) / 3)
 #' x
-#' Vec(x)
+#' Vec(x = x)
 #'
 #' @family Vectorization Functions
 #' @keywords linearAlgebra vectorization

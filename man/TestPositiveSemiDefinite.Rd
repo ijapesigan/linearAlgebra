@@ -37,7 +37,7 @@ unlike in \code{\link[=TestPositiveDefinite]{TestPositiveDefinite()}}.
 }
 \examples{
 # TRUE
-TestPositiveSemiDefinite(x = diag(2))
+TestPositiveSemiDefinite(x = diag(x = 2))
 
 # TRUE (eigenvalues 2 and 0)
 TestPositiveSemiDefinite(x = matrix(data = 1, nrow = 2, ncol = 2))

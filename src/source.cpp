@@ -71,7 +71,7 @@ arma::mat DiffCols(const arma::mat& x) {
 //' @return Numeric \eqn{k \times k} symmetric matrix.
 //'
 //' @examples
-//' // In C++: SymofVechCpp(vech_row, 3);
+//' # C++ only: SymofVechCpp(x = vech_row, k = 3)
 //'
 //' @noRd
 arma::mat SymofVechCpp(const arma::rowvec& x, const arma::uword& k) {
@@ -107,7 +107,7 @@ arma::mat SymofVechCpp(const arma::rowvec& x, const arma::uword& k) {
 //' @return Numeric row vector of length \eqn{k (k + 1) / 2}.
 //'
 //' @examples
-//' // In C++: VechCpp(sigma);
+//' # C++ only: VechCpp(x = sigma)
 //'
 //' @noRd
 arma::rowvec VechCpp(const arma::mat& x) {
