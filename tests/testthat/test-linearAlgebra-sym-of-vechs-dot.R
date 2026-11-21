@@ -1,4 +1,4 @@
-## ---- test-linearAlgebra-symof-vechs-dot
+## ---- test-linearAlgebra-sym-of-vechs-dot
 lapply(
   X = 1,
   FUN = function(i,
@@ -24,5 +24,5 @@ lapply(
       }
     )
   },
-  text = "test-linearAlgebra-symof-vechs-dot"
+  text = "test-linearAlgebra-sym-of-vechs-dot"
 )

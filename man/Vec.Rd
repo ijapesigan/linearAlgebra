@@ -17,9 +17,9 @@ Returns \eqn{\operatorname{vec} \! \left( \boldsymbol{A} \right)},
 the columns of a matrix stacked into one vector.
 }
 \examples{
-x <- toeplitz((3:1) / 3)
+x <- toeplitz(x = (3:1) / 3)
 x
-Vec(x)
+Vec(x = x)
 
 }
 \seealso{

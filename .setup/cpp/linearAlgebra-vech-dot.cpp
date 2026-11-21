@@ -19,7 +19,7 @@
 //' @return Numeric row vector of length \eqn{k (k + 1) / 2}.
 //'
 //' @examples
-//' // In C++: VechCpp(sigma);
+//' # C++ only: VechCpp(x = sigma)
 //'
 //' @noRd
 arma::rowvec VechCpp(const arma::mat& x) {

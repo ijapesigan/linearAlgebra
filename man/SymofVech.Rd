@@ -21,9 +21,9 @@ its lower triangle stacked column by column.
 \eqn{k} is found from the length of \code{x}.
 }
 \examples{
-x <- toeplitz((3:1) / 3)
+x <- toeplitz(x = (3:1) / 3)
 x
-SymofVech(x = Vech(x))
+SymofVech(x = Vech(x = x))
 
 }
 \seealso{

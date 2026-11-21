@@ -1,3 +1,20 @@
+# linearAlgebra 0.0.5
+
+## Improvements
+
+- `.DMat()` builds the duplication matrix by indexing, not with `outer()` and `ifelse()`; `.PInvDmat()` divides each row of
+  \(D'\) by its sum, since \(D'D\) is diagonal. Same results (tests against the 0.0.4 code); about 100 times faster at k = 10.
+
+## Bug fixes
+
+- `Vech()` and `Vechs()` stop on a non-square matrix.
+
+## Other changes
+
+- Examples name every argument; the tests of internal functions are named after their R files; new tests for the errors.
+- The examples of the C++ functions `SymofVechCpp()` and `VechCpp()` are R comments, so styler can parse
+  `R/RcppExports.R`.
+
 # linearAlgebra 0.0.4
 
 ## Patch

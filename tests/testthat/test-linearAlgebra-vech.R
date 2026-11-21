@@ -19,3 +19,25 @@ lapply(
   },
   text = "test-linearAlgebra-vech"
 )
+
+## ---- test-linearAlgebra-vech-error
+lapply(
+  X = 1,
+  FUN = function(i,
+                 text) {
+    testthat::skip_on_cran()
+    message(text)
+    testthat::test_that(
+      desc = paste(text, "stops on a non-square matrix or a vector"),
+      code = {
+        testthat::expect_error(
+          object = Vech(x = matrix(data = 1:6, nrow = 2))
+        )
+        testthat::expect_error(
+          object = Vech(x = 1:3)
+        )
+      }
+    )
+  },
+  text = "test-linearAlgebra-vech-error"
+)

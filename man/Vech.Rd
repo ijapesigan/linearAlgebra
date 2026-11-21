@@ -20,9 +20,9 @@ If \code{x} has column names, the elements are named
 \code{"row,column"}.
 }
 \examples{
-x <- toeplitz((3:1) / 3)
+x <- toeplitz(x = (3:1) / 3)
 x
-Vech(x)
+Vech(x = x)
 
 }
 \seealso{
