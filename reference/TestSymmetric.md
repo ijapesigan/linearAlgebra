@@ -38,12 +38,12 @@ Ivan Jacob Agaloos Pesigan
 
 ``` r
 # TRUE
-TestSymmetric(diag(2))
+TestSymmetric(x = diag(x = 2))
 #> [1] TRUE
 
 # FALSE
 TestSymmetric(
-  matrix(
+  x = matrix(
     data = 1:9,
     ncol = 3
   )

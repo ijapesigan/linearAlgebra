@@ -11,11 +11,11 @@ Source:
 [`inst/CITATION`](https://github.com/ijapesigan/linearAlgebra/blob/main/inst/CITATION)
 
 Pesigan, I. J. A. (2026). linearAlgebra: Linear Algebra Helpers. R
-package version 0.0.4. https://github.com/ijapesigan/linearAlgebra
+package version 0.0.5. https://github.com/ijapesigan/linearAlgebra
 
 @Manual{,\
   author = {Ivan Jacob Agaloos Pesigan},\
   title = {linearAlgebra: Linear Algebra Helpers},\
   year = {2026},\
-  note = {R package version 0.0.4},\
+  note = {R package version 0.0.5},\
 }

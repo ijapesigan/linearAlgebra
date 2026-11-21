@@ -54,7 +54,7 @@ Ivan Jacob Agaloos Pesigan
 
 ``` r
 # TRUE
-TestPositiveSemiDefinite(x = diag(2))
+TestPositiveSemiDefinite(x = diag(x = 2))
 #> [1] TRUE
 
 # TRUE (eigenvalues 2 and 0)

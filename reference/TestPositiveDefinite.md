@@ -49,12 +49,12 @@ Ivan Jacob Agaloos Pesigan
 
 ``` r
 # TRUE
-TestPositiveDefinite(diag(2))
+TestPositiveDefinite(x = diag(x = 2))
 #> [1] TRUE
 
 # FALSE
 TestPositiveDefinite(
-  matrix(
+  x = matrix(
     data = c(1, 2, 3, 2, 4, 5, 3, 5, 6),
     ncol = 3
   )

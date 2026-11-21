@@ -7,7 +7,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">linearAlgebra</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.5</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,6 +34,24 @@
       <small>Source: <a href="https://github.com/ijapesigan/linearAlgebra/blob/main/NEWS.md" class="external-link"><code>NEWS.md</code></a></small>
     </div>
 
+    <div class="section level2">
+<h2 class="pkg-version" data-toc-text="0.0.5" id="linearalgebra-005">linearAlgebra 0.0.5<a class="anchor" aria-label="anchor" href="#linearalgebra-005"></a></h2>
+<div class="section level3">
+<h3 id="improvements-0-0-5">Improvements<a class="anchor" aria-label="anchor" href="#improvements-0-0-5"></a></h3>
+<ul><li>
+<code>.DMat()</code> builds the duplication matrix by indexing, not with <code><a href="https://rdrr.io/r/base/outer.html" class="external-link">outer()</a></code> and <code><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse()</a></code>; <code>.PInvDmat()</code> divides each row of (D’) by its sum, since (D’D) is diagonal. Same results (tests against the 0.0.4 code); about 100 times faster at k = 10.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="bug-fixes-0-0-5">Bug fixes<a class="anchor" aria-label="anchor" href="#bug-fixes-0-0-5"></a></h3>
+<ul><li>
+<code><a href="../reference/Vech.html">Vech()</a></code> and <code><a href="../reference/Vechs.html">Vechs()</a></code> stop on a non-square matrix.</li>
+</ul></div>
+<div class="section level3">
+<h3 id="other-changes-0-0-5">Other changes<a class="anchor" aria-label="anchor" href="#other-changes-0-0-5"></a></h3>
+<ul><li>Examples name every argument; the tests of internal functions are named after their R files; new tests for the errors.</li>
+<li>The examples of the C++ functions <code>SymofVechCpp()</code> and <code>VechCpp()</code> are R comments, so styler can parse <code>R/RcppExports.R</code>.</li>
+</ul></div>
+</div>
     <div class="section level2">
 <h2 class="pkg-version" data-toc-text="0.0.4" id="linearalgebra-004">linearAlgebra 0.0.4<a class="anchor" aria-label="anchor" href="#linearalgebra-004"></a></h2>
 <div class="section level3">
